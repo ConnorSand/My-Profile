@@ -3,10 +3,10 @@ body {
     background-color: #D9AFD9;
     background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%) ;
     background-repeat: no-repeat;
-
-    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    font-family:'Roboto', sans-serif;
     font-size: 17px;
-    font-weight: lighter;
+
 
 }
 
@@ -15,18 +15,29 @@ body {
     margin: 8px;
 }
 
-h1 {
+h1, h2 {
   color: #1c67D2;
 
 }
 
-h2 {
-  color: #1c67D2;
+img {
+  transition: transform 0.3s;
+}
 
+img:hover {
+  transform: scale(1.05);
 }
 
 i {
+  transition: transform 0.5s;
   color: #1c67D2;
+  font-size: 25px;
+  margin: 0 5px;
+}
+
+i:hover {
+  transform: scale(0.9);
+  color: #7d5fff;
   font-size: 25px;
   margin: 0 5px;
 }
@@ -35,6 +46,7 @@ i {
   width: 400px;   /* This sets the width */
   margin: 0 auto; /* This automatically sets left/right margins */
 }
+
 .img-circle {
   border-radius: 50%;
 }
@@ -49,6 +61,7 @@ i {
   border: 1px solid lightgrey;
   margin-top: 1em;
   box-shadow: 3px 3px 1px 1px rgba(0, 0, 255, .1);
+  border-radius: 5px;
 }
 
 .card-white2 {
@@ -58,6 +71,7 @@ i {
   border: 1px solid lightgrey;
   margin-top: 1em;
   box-shadow: 3px 3px 1px 1px rgba(0, 0, 255, .1);
+  border-radius: 5px;
 }
 
 li {
@@ -71,7 +85,7 @@ ul {
 }
 
 p {
-  font-size: 13px
+  font-size: 15px;
 }
 
 @media (max-width: 960px) {
